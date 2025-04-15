@@ -1,5 +1,5 @@
 
-import { Mortarboard, Award } from "lucide-react";
+import { GraduationCap, Award } from "lucide-react";
 
 const EducationSection = () => {
   return (
@@ -16,7 +16,7 @@ const EducationSection = () => {
           <div className="bg-white rounded-xl p-8 shadow-sm">
             <div className="flex items-center gap-4 mb-6">
               <div className="bg-primary/10 p-3 rounded-lg">
-                <Mortarboard className="text-primary" size={28} />
+                <GraduationCap className="text-primary" size={28} />
               </div>
               <h3 className="text-2xl font-bold">Education</h3>
             </div>
