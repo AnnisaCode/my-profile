@@ -32,7 +32,9 @@ const Navbar = () => {
     <nav
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4",
-        scrolled ? "bg-white/80 backdrop-blur-md shadow-sm" : "bg-transparent"
+        scrolled 
+          ? "bg-white/85 backdrop-blur-md shadow-sm" 
+          : "bg-white/25 backdrop-blur-sm"
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -71,7 +73,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-md py-4 px-6 animate-fade-in">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-white/90 backdrop-blur-md shadow-md py-4 px-6 animate-fade-in">
           <div className="flex flex-col space-y-4">
             {["about", "education", "experience", "skills", "portfolio", "contact"].map((item) => (
               <button

@@ -11,7 +11,7 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
 // Profile image from uploaded file
-const profileImage = "/lovable-uploads/4d403208-e7bb-43c6-a4fa-64991136bca3.png";
+const profileImage = "/lovable-uploads/95bbf8d2-810c-4729-b120-d47bc236f7fe.png";
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);

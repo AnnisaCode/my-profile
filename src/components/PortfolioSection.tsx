@@ -1,7 +1,31 @@
 
 import { ExternalLink, Code } from "lucide-react";
+import { useState } from "react";
+import PortfolioModal from "./PortfolioModal";
 
 const PortfolioSection = () => {
+  const [selectedProject, setSelectedProject] = useState<{
+    title: string;
+    imageUrl: string;
+    isOpen: boolean;
+  }>({
+    title: "",
+    imageUrl: "",
+    isOpen: false
+  });
+
+  const closeModal = () => {
+    setSelectedProject(prev => ({ ...prev, isOpen: false }));
+  };
+
+  const openProjectModal = (title: string, imageUrl: string) => {
+    setSelectedProject({
+      title,
+      imageUrl,
+      isOpen: true
+    });
+  };
+
   const portfolioItems = [
     {
       title: "Preventive Maintenance FBMS 2 BP Batam",
@@ -9,6 +33,7 @@ const PortfolioSection = () => {
       period: "Jan 2024 - Dec 2024",
       company: "PT Inti Digital Madani",
       description: "Website maintenance project ensuring functionality, responsiveness, and visual appeal. Implemented updates, optimized performance, and resolved technical issues while collaborating with cross-functional teams.",
+      imageUrl: "/lovable-uploads/b4903db5-c6be-4333-9ec8-1ece471c6502.png",
       skills: ["Maintenance", "Team Collaboration", "Web Development", "Performance Optimization"]
     },
     {
@@ -17,6 +42,7 @@ const PortfolioSection = () => {
       period: "Aug 2020 - May 2021",
       company: "Polibatam Software Team",
       description: "Web-based Information System for the Certification Institute (LSP Polibatam). Developed using PHP, HTML, CSS, JavaScript, and SQL Server. Implemented features for certification management, user accounts, and reporting.",
+      imageUrl: "/lovable-uploads/0ef5f3f2-9de6-483d-b335-e3f8f55d2ac7.png",
       skills: ["Responsive Web Design", "Full-stack Programming", "Database Design", "User Interface"]
     }
   ];
@@ -67,7 +93,7 @@ const PortfolioSection = () => {
                   className="inline-flex items-center text-primary font-medium hover:underline"
                   onClick={(e) => {
                     e.preventDefault();
-                    alert("Portfolio link would open in a new tab");
+                    openProjectModal(item.title, item.imageUrl);
                   }}
                 >
                   <span>View Details</span>
@@ -110,6 +136,14 @@ const PortfolioSection = () => {
           </a>
         </div>
       </div>
+
+      {/* Project Modal */}
+      <PortfolioModal 
+        isOpen={selectedProject.isOpen}
+        onClose={closeModal}
+        imageUrl={selectedProject.imageUrl}
+        title={selectedProject.title}
+      />
     </section>
   );
 };

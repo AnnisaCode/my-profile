@@ -48,7 +48,7 @@ const HeroSection = ({ profileImage }: HeroSectionProps) => {
           <div className="w-full md:w-1/2 order-1 md:order-2 flex justify-center animate-fade-in" style={{ animationDelay: "0.4s" }}>
             <div className="relative creative-border">
               <img 
-                src="/lovable-uploads/4d403208-e7bb-43c6-a4fa-64991136bca3.png"
+                src={profileImage}
                 alt="Profile" 
                 className="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover z-10 relative animate-float"
               />
