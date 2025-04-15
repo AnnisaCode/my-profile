@@ -13,8 +13,9 @@ const HeroSection = ({ profileImage }: HeroSectionProps) => {
           <div className="w-full md:w-1/2 order-2 md:order-1 animate-fade-in" style={{ animationDelay: "0.2s" }}>
             <h2 className="text-xl md:text-2xl font-medium text-primary mb-4">Hello, I'm</h2>
             <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 text-gray-900">
-              Creative Web Developer
+              ANNISA
             </h1>
+            <p className="text-xl md:text-2xl font-medium text-secondary-foreground mb-4">Creative Web Developer</p>
             <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
               Passionate about solving problems through clean code and efficient logic.
               Skilled in web development, report design, and software engineering.
@@ -47,7 +48,7 @@ const HeroSection = ({ profileImage }: HeroSectionProps) => {
           <div className="w-full md:w-1/2 order-1 md:order-2 flex justify-center animate-fade-in" style={{ animationDelay: "0.4s" }}>
             <div className="relative creative-border">
               <img 
-                src={profileImage}
+                src="/lovable-uploads/4d403208-e7bb-43c6-a4fa-64991136bca3.png"
                 alt="Profile" 
                 className="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover z-10 relative animate-float"
               />
