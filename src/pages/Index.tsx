@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
@@ -11,7 +10,7 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
 // Profile image from uploaded file
-const profileImage = "/lovable-uploads/95bbf8d2-810c-4729-b120-d47bc236f7fe.png";
+const profileImage = "/my-profile/profile.png";
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -39,7 +38,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      
+
       <div className="scroll-snap-container">
         <HeroSection profileImage={profileImage} />
         <AboutSection />

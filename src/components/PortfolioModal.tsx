@@ -2,6 +2,7 @@
 import { X } from "lucide-react";
 import { useEffect } from "react";
 
+// FIXME: Jangan lupa perbaiki fitur untuk lihat capture project di portfolio init, kemudian tambahkan project pentaho juga di portfolio ini
 interface PortfolioModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -18,7 +19,7 @@ const PortfolioModal = ({ isOpen, onClose, imageUrl, title }: PortfolioModalProp
     };
 
     document.addEventListener("keydown", handleEscape);
-    
+
     if (isOpen) {
       document.body.style.overflow = "hidden";
     } else {
@@ -35,32 +36,32 @@ const PortfolioModal = ({ isOpen, onClose, imageUrl, title }: PortfolioModalProp
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-8">
-      <div 
+      <div
         className="absolute inset-0 bg-black/60 backdrop-blur-sm"
         onClick={onClose}
       ></div>
-      
+
       <div className="bg-white rounded-xl shadow-xl w-full max-w-4xl z-10 overflow-hidden flex flex-col max-h-[90vh]">
         <div className="flex items-center justify-between p-4 border-b">
           <h3 className="text-xl font-bold text-gray-900">{title}</h3>
-          <button 
+          <button
             onClick={onClose}
             className="text-gray-500 hover:text-gray-700 transition-colors"
           >
             <X size={24} />
           </button>
         </div>
-        
+
         <div className="overflow-auto p-2 flex-grow">
           <div className="w-full h-full min-h-[50vh] border border-gray-200 rounded-lg overflow-hidden">
-            <img 
-              src={imageUrl} 
-              alt={title} 
+            <img
+              src={imageUrl}
+              alt={title}
               className="w-full h-auto object-contain"
             />
           </div>
         </div>
-        
+
         <div className="p-4 border-t">
           <button
             onClick={onClose}

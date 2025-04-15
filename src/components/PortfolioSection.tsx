@@ -32,7 +32,7 @@ const PortfolioSection = () => {
       period: "Jan 2024 - Dec 2024",
       company: "PT Inti Digital Madani",
       description: "Website maintenance project ensuring functionality, responsiveness, and visual appeal. Implemented updates, optimized performance, and resolved technical issues while collaborating with cross-functional teams.",
-      imageUrl: "/lovable-uploads/b4903db5-c6be-4333-9ec8-1ece471c6502.png",
+      imageUrl: "/FBMS2.png",
       skills: ["Maintenance", "Team Collaboration", "Web Development", "Performance Optimization"]
     },
     {
@@ -41,7 +41,7 @@ const PortfolioSection = () => {
       period: "Aug 2020 - May 2021",
       company: "Polibatam Software Team",
       description: "Web-based Information System for the Certification Institute (LSP Polibatam). Developed using PHP, HTML, CSS, JavaScript, and SQL Server. Implemented features for certification management, user accounts, and reporting.",
-      imageUrl: "/lovable-uploads/0ef5f3f2-9de6-483d-b335-e3f8f55d2ac7.png",
+      imageUrl: "/LSP.png",
       skills: ["Responsive Web Design", "Full-stack Programming", "Database Design", "User Interface"]
     }
   ];
@@ -105,7 +105,7 @@ const PortfolioSection = () => {
 
         <div className="mt-16 flex flex-col md:flex-row gap-8 justify-center">
           <a
-            href="https://annisacode.github.io/personal-portfolio/"
+            href=" https://annisacode.github.io/side-portfolio/"
             target="_blank"
             rel="noopener noreferrer"
             className="group bg-gradient-to-br from-primary to-accent text-white px-8 py-6 rounded-xl shadow-sm hover:shadow-md transition-all"
