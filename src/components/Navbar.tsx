@@ -32,14 +32,14 @@ const Navbar = () => {
     <nav
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4",
-        scrolled 
-          ? "bg-white/85 backdrop-blur-md shadow-sm" 
+        scrolled
+          ? "bg-white/85 backdrop-blur-md shadow-sm"
           : "bg-white/25 backdrop-blur-sm"
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <a 
-          href="#" 
+        <a
+          href="#"
           className="text-xl font-display font-bold text-primary"
           onClick={(e) => {
             e.preventDefault();

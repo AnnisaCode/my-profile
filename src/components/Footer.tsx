@@ -1,5 +1,5 @@
 
-import { ArrowUp } from "lucide-react";
+// import { ArrowUp } from "lucide-react";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <h3 className="text-xl font-bold">AnnisaCode</h3>
-            <p className="text-gray-400 mt-2">Software Engineer & Report Designer</p>
+            <p className="text-gray-400 mt-2">Creative Web Developer & Report Designer</p>
           </div>
 
           <div className="flex space-x-6">
@@ -70,13 +70,13 @@ const Footer = () => {
             </a>
           </div>
 
-          <button
+          {/* <button
             onClick={scrollToTop}
             className="mt-6 md:mt-0 p-3 bg-primary/20 hover:bg-primary/30 rounded-full transition-colors"
             aria-label="Scroll to top"
           >
             <ArrowUp size={20} className="text-primary" />
-          </button>
+          </button> */}
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
