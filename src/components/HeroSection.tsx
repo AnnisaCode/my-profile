@@ -15,10 +15,10 @@ const HeroSection = ({ profileImage }: HeroSectionProps) => {
             <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 text-gray-900">
               ANNISA
             </h1>
-            <p className="text-xl md:text-2xl font-medium text-secondary-foreground mb-4">Software Engineer</p>
+            <p className="text-xl md:text-2xl font-medium text-secondary-foreground mb-4">Front-End Web Developer</p>
             <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
-              Passionate about solving problems through clean code and efficient logic.
-              Skilled in web development, report design, and software engineering.
+              Passionate about creating intuitive user experiences through clean, responsive design and efficient frontend logic.
+              Skilled in modern web development and report design, with experience using advanced tools and workflows to enhance development speed and code quality.
             </p>
             <div className="flex flex-wrap gap-4">
               <button
