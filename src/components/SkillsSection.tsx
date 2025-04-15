@@ -1,4 +1,3 @@
-
 import { Code, Layout, Server, Database, LineChart, Users } from "lucide-react";
 
 const SkillsSection = () => {
@@ -6,7 +5,7 @@ const SkillsSection = () => {
     {
       title: "Frontend Development",
       icon: <Layout className="text-primary" size={28} />,
-      skills: ["HTML", "CSS", "JavaScript", "React", "Responsive Design", "Tailwind CSS"]
+      skills: ["HTML", "CSS", "JavaScript", "React", "Responsive Design", "Tailwind CSS", "Bootstrap"]
     },
     {
       title: "Backend Development",
@@ -21,7 +20,7 @@ const SkillsSection = () => {
     {
       title: "Database",
       icon: <Database className="text-primary" size={28} />,
-      skills: ["SQL Server", "PostgreSQL"]
+      skills: ["MySQL", "PostgreSQL"]
     },
     {
       title: "Data Visualization",
@@ -43,11 +42,11 @@ const SkillsSection = () => {
           <div className="h-1 w-20 bg-primary mx-auto mb-6 rounded-full"></div>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">Technical and professional skills I've developed throughout my career.</p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="bg-white rounded-xl p-8 shadow-sm border border-gray-100 transition-all hover:shadow-md"
             >
               <div className="flex items-center gap-4 mb-6">
@@ -56,11 +55,11 @@ const SkillsSection = () => {
                 </div>
                 <h3 className="text-xl font-bold">{category.title}</h3>
               </div>
-              
+
               <div className="flex flex-wrap gap-2 mt-4">
                 {category.skills.map((skill, i) => (
-                  <span 
-                    key={i} 
+                  <span
+                    key={i}
                     className={i % 3 === 0 ? "skill-badge-accent" : "skill-badge"}
                   >
                     {skill}
@@ -71,7 +70,7 @@ const SkillsSection = () => {
           ))}
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 

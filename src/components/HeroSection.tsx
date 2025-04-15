@@ -15,13 +15,13 @@ const HeroSection = ({ profileImage }: HeroSectionProps) => {
             <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 text-gray-900">
               ANNISA
             </h1>
-            <p className="text-xl md:text-2xl font-medium text-secondary-foreground mb-4">Creative Web Developer</p>
+            <p className="text-xl md:text-2xl font-medium text-secondary-foreground mb-4">Software Engineer</p>
             <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
               Passionate about solving problems through clean code and efficient logic.
               Skilled in web development, report design, and software engineering.
             </p>
             <div className="flex flex-wrap gap-4">
-              <button 
+              <button
                 className="px-6 py-3 bg-primary text-white rounded-full font-medium hover:bg-primary/90 transition-all"
                 onClick={() => {
                   const element = document.getElementById("about");
@@ -32,7 +32,7 @@ const HeroSection = ({ profileImage }: HeroSectionProps) => {
               >
                 Learn More
               </button>
-              <button 
+              <button
                 className="px-6 py-3 border border-primary text-primary rounded-full font-medium hover:bg-primary/10 transition-all"
                 onClick={() => {
                   const element = document.getElementById("contact");
@@ -47,9 +47,9 @@ const HeroSection = ({ profileImage }: HeroSectionProps) => {
           </div>
           <div className="w-full md:w-1/2 order-1 md:order-2 flex justify-center animate-fade-in" style={{ animationDelay: "0.4s" }}>
             <div className="relative creative-border">
-              <img 
+              <img
                 src={profileImage}
-                alt="Profile" 
+                alt="Profile"
                 className="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover z-10 relative animate-float"
               />
               <div className="absolute inset-0 rounded-full -m-3 bg-gradient-to-r from-primary/20 to-accent/20 blur-md animate-pulse-glow"></div>

@@ -46,7 +46,7 @@ const Navbar = () => {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          Creative.Dev
+          AnnisaCode
         </a>
 
         {/* Desktop Menu */}

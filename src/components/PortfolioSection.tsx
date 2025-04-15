@@ -1,4 +1,3 @@
-
 import { ExternalLink, Code } from "lucide-react";
 import { useState } from "react";
 import PortfolioModal from "./PortfolioModal";
@@ -55,11 +54,11 @@ const PortfolioSection = () => {
           <div className="h-1 w-20 bg-primary mx-auto mb-6 rounded-full"></div>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">Featured projects I've worked on throughout my career.</p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {portfolioItems.map((item, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="portfolio-card bg-white shadow-sm border border-gray-100 flex flex-col"
             >
               <div className="flex items-center justify-between mb-4">
@@ -70,26 +69,26 @@ const PortfolioSection = () => {
                   {item.period}
                 </span>
               </div>
-              
+
               <h3 className="text-xl font-bold mb-2">{item.title}</h3>
               <p className="text-primary font-medium mb-4">{item.company} | {item.type}</p>
-              
+
               <p className="text-gray-700 mb-6 flex-grow">{item.description}</p>
-              
+
               <div className="space-y-4 mt-auto">
                 <div className="flex flex-wrap gap-2">
                   {item.skills.map((skill, i) => (
-                    <span 
-                      key={i} 
+                    <span
+                      key={i}
                       className="skill-badge"
                     >
                       {skill}
                     </span>
                   ))}
                 </div>
-                
-                <a 
-                  href="#" 
+
+                {/* <a
+                  href="#"
                   className="inline-flex items-center text-primary font-medium hover:underline"
                   onClick={(e) => {
                     e.preventDefault();
@@ -98,20 +97,18 @@ const PortfolioSection = () => {
                 >
                   <span>View Details</span>
                   <ExternalLink size={16} className="ml-1" />
-                </a>
+                </a> */}
               </div>
             </div>
           ))}
         </div>
-        
+
         <div className="mt-16 flex flex-col md:flex-row gap-8 justify-center">
-          <a 
-            href="#" 
+          <a
+            href="https://annisacode.github.io/personal-portfolio/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group bg-gradient-to-br from-primary to-accent text-white px-8 py-6 rounded-xl shadow-sm hover:shadow-md transition-all"
-            onClick={(e) => {
-              e.preventDefault();
-              alert("Personal projects portfolio would open in a new tab");
-            }}
           >
             <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
               <span>Personal Projects</span>
@@ -119,14 +116,12 @@ const PortfolioSection = () => {
             </h3>
             <p className="text-white/80">Explore my creative personal projects and experiments</p>
           </a>
-          
-          <a 
-            href="#" 
+
+          <a
+            href="https://annisacode.github.io/annisa-s-portfolio/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group bg-gradient-to-br from-gray-800 to-gray-700 text-white px-8 py-6 rounded-xl shadow-sm hover:shadow-md transition-all"
-            onClick={(e) => {
-              e.preventDefault();
-              alert("Professional projects portfolio would open in a new tab");
-            }}
           >
             <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
               <span>Professional Work</span>
@@ -138,7 +133,7 @@ const PortfolioSection = () => {
       </div>
 
       {/* Project Modal */}
-      <PortfolioModal 
+      <PortfolioModal
         isOpen={selectedProject.isOpen}
         onClose={closeModal}
         imageUrl={selectedProject.imageUrl}
