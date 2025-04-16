@@ -7,11 +7,11 @@ const SkillsSection = () => {
       icon: <Layout className="text-primary" size={28} />,
       skills: ["HTML", "CSS", "JavaScript", "React", "Responsive Design", "Tailwind CSS", "Bootstrap"]
     },
-    {
-      title: "Backend Development",
-      icon: <Server className="text-primary" size={28} />,
-      skills: ["Java", "Spring Boot", "REST APIs", "Web Services", "NodeJS"]
-    },
+    // {
+    //   title: "Backend Development",
+    //   icon: <Server className="text-primary" size={28} />,
+    //   skills: ["Java", "Spring Boot", "REST APIs", "Web Services", "NodeJS"]
+    // },
     {
       title: "Programming Languages",
       icon: <Code className="text-primary" size={28} />,
