@@ -29,7 +29,7 @@ const Index = () => {
       <div className="h-screen w-full flex items-center justify-center bg-white">
         <div className="flex flex-col items-center">
           <div className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
-          <p className="mt-4 text-gray-700 font-medium">Loading portfolio...</p>
+          <p className="mt-4 text-gray-700 font-medium">Loading Annisa's portfolio...</p>
         </div>
       </div>
     );

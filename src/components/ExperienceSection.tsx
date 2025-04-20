@@ -1,4 +1,3 @@
-
 import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
@@ -12,7 +11,7 @@ const experiences = [
     skills: ["Crystal Reports", "Report Design", "Data Visualization", "Attention to Detail", "Team Collaboration"]
   },
   {
-    title: "Programmer",
+    title: "Frontend Developer",
     company: "PT Inti Digital Madani",
     period: "Jan 2024 - Dec 2024",
     duration: "1 year",
@@ -30,7 +29,7 @@ const experiences = [
     skills: ["Report Migration", "Crystal Reports", "REXpert BI", "Pentaho Platform", "Data Modeling"]
   },
   {
-    title: "Scrum Master",
+    title: "Scrum Master Intern",
     company: "Polibatam Software Team",
     period: "Feb 2021 - Aug 2021",
     duration: "7 months",
@@ -39,7 +38,7 @@ const experiences = [
     skills: ["Assistant Teaching", "Agile Methodologies", "Coaching & Mentoring", "Scrum", "Analytical Skills"]
   },
   {
-    title: "Software Developer Internship",
+    title: "Software Developer Intern",
     company: "Polibatam Software Team",
     period: "Jul 2020 - Aug 2021",
     duration: "1 year 2 months",
@@ -58,17 +57,15 @@ const ExperienceSection = () => {
           <div className="h-1 w-20 bg-primary mx-auto mb-6 rounded-full"></div>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">My professional journey and the projects I've worked on.</p>
         </div>
-        
+
         <div className="relative">
           <div className="hidden md:block absolute top-0 bottom-0 left-1/2 w-0.5 bg-primary/20 transform -translate-x-1/2"></div>
-          
+
           <div className="space-y-12">
             {experiences.map((experience, index) => (
-              <div 
-                key={index} 
-                className={`flex flex-col md:flex-row items-center gap-8 ${
-                  index % 2 === 0 ? 'md:flex-row-reverse' : ''
-                }`}
+              <div
+                key={index}
+                className={`flex flex-col md:flex-row items-center gap-8 ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}
               >
                 <div className="md:w-1/2 relative">
                   <div className="hidden md:block absolute top-8 left-1/2 w-8 h-0.5 bg-primary/20"></div>
@@ -82,14 +79,14 @@ const ExperienceSection = () => {
                         <p className="text-primary font-medium">{experience.company}</p>
                       </div>
                     </div>
-                    
+
                     <div className="flex items-center gap-2 text-gray-600 mb-4">
                       <Calendar size={16} />
                       <span className="text-sm">{experience.period} · {experience.duration}</span>
                     </div>
-                    
+
                     <p className="text-gray-700 mb-4">{experience.description}</p>
-                    
+
                     <div className="flex flex-wrap gap-2">
                       {experience.skills.slice(0, 4).map((skill, i) => (
                         <span key={i} className="skill-badge">
@@ -99,7 +96,7 @@ const ExperienceSection = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="hidden md:flex w-1/2 justify-center">
                   <div className="w-12 h-12 bg-primary/10 rounded-full border-4 border-white flex items-center justify-center shadow-sm">
                     <span className="text-primary font-bold">{index + 1}</span>

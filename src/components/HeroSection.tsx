@@ -15,10 +15,9 @@ const HeroSection = ({ profileImage }: HeroSectionProps) => {
             <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 text-gray-900">
               ANNISA
             </h1>
-            <p className="text-xl md:text-2xl font-medium text-secondary-foreground mb-4">Front-End Web Developer</p>
+            <p className="text-xl md:text-2xl font-medium text-secondary-foreground mb-4">Fullstack Web Developer (In Progress)</p>
             <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
-              Passionate about creating intuitive user experiences through clean, responsive design and efficient frontend logic.
-              Skilled in modern web development and report design, with experience using advanced tools and workflows to enhance development speed and code quality.
+              I specialize in building seamless, responsive web applications with a focus on frontend development and am currently expanding my skills in backend development. Passionate about creating intuitive user experiences and efficient solutions, I strive to deliver high-quality work with a strong focus on collaboration and continuous learning.
             </p>
             <div className="flex flex-wrap gap-4">
               <button
@@ -45,6 +44,7 @@ const HeroSection = ({ profileImage }: HeroSectionProps) => {
               </button>
             </div>
           </div>
+
           <div className="w-full md:w-1/2 order-1 md:order-2 flex justify-center animate-fade-in" style={{ animationDelay: "0.4s" }}>
             <div className="relative creative-border">
               <img
