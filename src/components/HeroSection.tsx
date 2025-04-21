@@ -1,4 +1,3 @@
-
 import { ArrowDown } from "lucide-react";
 
 interface HeroSectionProps {
@@ -15,9 +14,9 @@ const HeroSection = ({ profileImage }: HeroSectionProps) => {
             <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 text-gray-900">
               ANNISA
             </h1>
-            <p className="text-xl md:text-2xl font-medium text-secondary-foreground mb-4">Fullstack Web Developer (In Progress)</p>
+            <p className="text-xl md:text-2xl font-medium text-secondary-foreground mb-4">Exploring Roles in Tech Industry</p>
             <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
-              I specialize in building seamless, responsive web applications with a focus on frontend development and am currently expanding my skills in backend development. Passionate about creating intuitive user experiences and efficient solutions, I strive to deliver high-quality work with a strong focus on collaboration and continuous learning.
+              I am passionate about exploring various roles within the tech industry. Rather than focusing on a single specialization, I am committed to learning and adapting across different areas to find the best fit for my skills and interests. I thrive on taking on new challenges, collaborating on diverse projects, and continuously developing my abilities to contribute effectively in dynamic environments.
             </p>
             <div className="flex flex-wrap gap-4">
               <button

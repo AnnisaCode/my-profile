@@ -18,7 +18,7 @@ const SkillsSection = () => {
       skills: ["JavaScript", "PHP", "SQL"]
     },
     {
-      title: "Database",
+      title: "Database Management",
       icon: <Database className="text-primary" size={28} />,
       skills: ["PostgreSQL", "MySQL"]
     },
@@ -40,7 +40,9 @@ const SkillsSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">Skills & Expertise</h2>
           <div className="h-1 w-20 bg-primary mx-auto mb-6 rounded-full"></div>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto">Technical and professional skills I've developed throughout my career.</p>
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+            These are the technical and professional skills I have developed over the years, which I apply to deliver high-quality, efficient solutions.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -70,7 +72,7 @@ const SkillsSection = () => {
           ))}
         </div>
       </div>
-    </section >
+    </section>
   );
 };
 

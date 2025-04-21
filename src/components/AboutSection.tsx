@@ -6,8 +6,7 @@ const AboutSection = () => {
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">About Me</h2>
           <div className="h-1 w-20 bg-primary mx-auto mb-8 rounded-full"></div>
           <p className="text-lg text-gray-700 leading-relaxed">
-            I am a Fullstack Web Developer with a strong focus on frontend development and currently expanding my expertise in backend development using PHP. With a background in IT, I have honed my skills in HTML, CSS, JavaScript, and React to create clean, responsive, and user-friendly web applications.
-            I am passionate about learning and solving problems by developing efficient solutions. As I continue to explore the fullstack development ecosystem, I am dedicated to delivering high-quality, scalable web applications through modern tools like Tailwind CSS and Scrum methodologies.
+            I am passionate about exploring various roles within the tech industry. Rather than focusing on a single specialization, I am committed to learning and adapting across different areas to find the best fit for my skills and interests. I am driven by a curiosity for new challenges and am excited to contribute to diverse projects, honing my skills in the process. I aim to grow by embracing new opportunities and collaborating with others in dynamic environments.
           </p>
         </div>
 
@@ -15,21 +14,21 @@ const AboutSection = () => {
           <div className="bg-secondary/50 rounded-xl p-8 transition-all hover:shadow-md hover:bg-secondary/70">
             <h3 className="text-xl font-bold mb-4">Skills Focus</h3>
             <p className="text-gray-700">
-              Focused on both frontend and backend development, with a strong emphasis on clean visual design, responsive layouts, and building scalable web applications using PHP, React, and Tailwind CSS.
+              Exploring a wide range of skills across frontend and backend development, with a strong interest in learning how to integrate various technologies to build well-rounded, user-centric solutions. I am particularly focused on gaining experience in both the technical and creative aspects of web development.
             </p>
           </div>
 
           <div className="bg-secondary/50 rounded-xl p-8 transition-all hover:shadow-md hover:bg-secondary/70">
             <h3 className="text-xl font-bold mb-4">Experience</h3>
             <p className="text-gray-700">
-              Practical experience in frontend web development, building dynamic and user-centric applications. Currently expanding into backend development with PHP, while maintaining a focus on efficient, high-quality code.
+              With a background in web development, I have gained practical experience in building responsive, user-friendly applications. I am currently expanding my knowledge and skills in different areas of development, embracing both frontend and backend challenges as I explore new technologies and workflows.
             </p>
           </div>
 
           <div className="bg-secondary/50 rounded-xl p-8 transition-all hover:shadow-md hover:bg-secondary/70">
             <h3 className="text-xl font-bold mb-4">Career Goals</h3>
             <p className="text-gray-700">
-              Aiming to grow as a fullstack developer, mastering both frontend and backend technologies to build robust, scalable web applications. I am excited to collaborate on impactful projects and continue refining my skills in modern development workflows.
+              I aim to continue growing within the tech industry by exploring diverse roles and responsibilities. By embracing opportunities across various domains, I seek to find the role that aligns best with my strengths and aspirations, contributing to impactful projects along the way.
             </p>
           </div>
         </div>
