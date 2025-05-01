@@ -3,7 +3,7 @@ import { Briefcase, Calendar } from "lucide-react";
 const experiences = [
   {
     title: "Crystal Report Developer",
-    company: "PT Inti Digital Madani",
+    company: "Freelance",
     period: "Sep 2024 - Dec 2024",
     duration: "4 months",
     location: "Batam, Riau Islands, Indonesia (Remote)",
@@ -11,13 +11,13 @@ const experiences = [
     skills: ["Crystal Reports", "Report Design", "Data Visualization", "Attention to Detail", "Team Collaboration"]
   },
   {
-    title: "Frontend Developer",
-    company: "PT Inti Digital Madani",
-    period: "Jan 2024 - Dec 2024",
-    duration: "1 year",
+    title: "Software Engineer",
+    company: "Freelance",
+    period: "Jan 2024 - Present",
+    duration: "1 year 4 months",
     location: "Batam, Kepulauan Riau, Indonesia",
-    description: "Maintain and update the company's website, ensuring it remains functional, responsive, and visually appealing. Collaborate with other teams to implement updates and resolve issues, ensuring smooth website performance. Write and refine efficient, testable code to support ongoing improvements. Optimize the website for better performance, speed, and SEO.",
-    skills: ["Version Control (Git)", "Cross-Browser Testing", "Debugging", "Front-end Development", "Performance Optimization"]
+    description: "Developed and maintained responsive, user-friendly websites based on client needs. Managed updates, resolved functionality issues, and ensured stable website performance. Wrote clean, testable code, optimized websites for speed and SEO, and designed custom landing pages. Also provided technical support and suggested improvements by keeping up with web development trends.",
+    skills: ["Git & Version Control", "Cross-Browser Testing", "Website Debugging", "Performance Optimization", "HTML/CSS/JavaScript"]
   },
   {
     title: "Pentaho Report Designer",
