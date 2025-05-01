@@ -28,16 +28,18 @@ const ContactSection = () => {
               <div>
                 <h4 className="text-lg font-bold mb-1">LinkedIn</h4>
                 <a
-                  href={linkedinUrl || "#"} // fallback if URL is not set
+                  href={linkedinUrl || "#"}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-gray-700 hover:text-primary transition-colors"
+                  className="inline-flex items-center gap-2 border border-primary text-primary px-4 py-2 rounded-full hover:bg-primary hover:text-white transition-all duration-300 ease-in-out"
                 >
-                  linkedin.com/in/annisa1202
+                  <Linkedin size={18} />
+                  <span>View Profile</span>
                 </a>
               </div>
             </div>
           </div>
+
 
           <div className="mt-12">
             <h4 className="text-lg font-bold mb-4">Let's Connect</h4>

@@ -2,20 +2,29 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
+    title: "Web Developer",
+    company: "Freelance",
+    period: "January 2025 – Present",
+    duration: "On-going",
+    location: "Indonesia (Remote)",
+    description: "Providing custom web development services tailored to client needs. Maintain and improve internal websites to ensure functionality, responsiveness, and a smooth user experience. Write and refine efficient, testable code using HTML, CSS, JavaScript, and PHP. Collaborate with teams to implement updates, resolve issues, and deliver SEO-friendly, high-performance websites. Continuously explore and apply web development best practices to support improvements and troubleshoot effectively.",
+    skills: ["HTML", "CSS", "JavaScript", "PHP", "Web Maintenance", "SEO", "Performance Optimization", "Problem Solving"]
+  },
+  {
     title: "Crystal Report Developer",
     company: "Freelance",
     period: "Sep 2024 - Dec 2024",
     duration: "4 months",
-    location: "Batam, Riau Islands, Indonesia (Remote)",
+    location: "Indonesia(Remote)",
     description: "Designed visually engaging Crystal Reports, transforming raw data into insightful and appealing reports, making complex information easily accessible. Created striking layouts and dynamic visuals, including charts and graphics, bringing data to life and enhancing readability. Collaborated closely with team members to ensure each report met business requirements, while adding a unique and impactful design touch.",
     skills: ["Crystal Reports", "Report Design", "Data Visualization", "Attention to Detail", "Team Collaboration"]
   },
   {
-    title: "Software Engineer",
+    title: "Front-End Web Developer",
     company: "Freelance",
-    period: "Jan 2024 - Present",
-    duration: "1 year 4 months",
-    location: "Batam, Kepulauan Riau, Indonesia",
+    period: "Jan 2024 - Dec 2024",
+    duration: "1 year",
+    location: "Batam, Kepulauan Riau, Indonesia(Hybrid)",
     description: "Developed and maintained responsive, user-friendly websites based on client needs. Managed updates, resolved functionality issues, and ensured stable website performance. Wrote clean, testable code, optimized websites for speed and SEO, and designed custom landing pages. Also provided technical support and suggested improvements by keeping up with web development trends.",
     skills: ["Git & Version Control", "Cross-Browser Testing", "Website Debugging", "Performance Optimization", "HTML/CSS/JavaScript"]
   },
@@ -88,12 +97,13 @@ const ExperienceSection = () => {
                     <p className="text-gray-700 mb-4">{experience.description}</p>
 
                     <div className="flex flex-wrap gap-2">
-                      {experience.skills.slice(0, 4).map((skill, i) => (
+                      {experience.skills.map((skill, i) => (
                         <span key={i} className="skill-badge">
                           {skill}
                         </span>
                       ))}
                     </div>
+
                   </div>
                 </div>
 
