@@ -12,7 +12,7 @@ const PortfolioSection = () => {
 
         <div className="mt-16 flex flex-col md:flex-row gap-8 justify-center">
           <a
-            href="https://personal-project-smoky-three.vercel.app/"
+            href="https://side-portfolio-rho.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="group bg-gradient-to-br from-primary to-accent text-white px-8 py-6 rounded-xl shadow-sm hover:shadow-md transition-all"
